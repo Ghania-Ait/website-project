@@ -89,6 +89,7 @@ a{
     animation-delay: 2s;
 }
 #hero h1:nth-child(3){
+    animation:text_reaveal_name .5s ease forwards;
     animation-delay: 2.5s;
 }
 
@@ -126,6 +127,12 @@ a{
 @keyframes text_reaveal {
     100%{
         color:white;
+    }
+}
+@keyframes text_reaveal_name {
+    100%{
+        color:crimson;
+        font-weight:500;
     }
 }
 /* End Keyframes */
