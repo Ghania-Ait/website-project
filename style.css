@@ -10,6 +10,7 @@
 html{
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 
 }
 a{ 
@@ -90,6 +91,7 @@ p{
 #header .header{
     min-height: 8vh;
     background-color: rgba(139, 133, 133, 0.24);
+    transition: .4s ease background-color;
 }
 .header .nav-bar{
     display: flex;
@@ -300,6 +302,11 @@ bottom: 0;
     max-width: 1500px;
     margin:0 auto;
     padding: 100px 0;
+}
+
+#services .service-top {
+    min-width: 500px;
+    margin: 0 auto;
 }
 
 
@@ -752,3 +759,33 @@ bottom: 0;
 
 /* End Media query for Tablet */
 
+/* media query for Desktop */
+
+@media screen and (min-width: 1200px){
+    /*header  */
+#header .hamburger{
+    display: none;
+}
+
+#header .nav-list ul{
+    position: initial;
+    display: block;
+    height: auto;
+    width: fit-content;
+    background-color:transparent;
+}
+#header .nav-list ul li{
+    display: inline-block;
+}
+#header .nav-list ul li a{
+    font-size: 1.8rem;
+}
+
+#header .nav-list ul a::after{
+    display: none;
+}
+
+
+    /* end header */
+}
+/* end media query for Desktop */
